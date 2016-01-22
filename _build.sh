@@ -27,25 +27,24 @@ function buildProject {
     JOB_FOLDER=$2
     LOG_FILE=$3
     JACOCO_GRADLE_TEMPLATE="/home/ubuntu/projects/BUILD_TEMPLATE/playground/jacoco.gradle"
+    TEMPLATES_TEST="/home/ubuntu/projects/BUILD_TEMPLATE/playground/templates/test-template"
     OUT="/home/ubuntu/projects/BUILD_TEMPLATE/playground/log.txt"
 
     basename=$(basename $1)
     PROJECT_FOLDER=${basename%.*}
     
-    echo ""
     echo  "$DATE cloning the repository for $PROJECT_FOLDER from $PROJECT_URL"
-    echo ""
  
     GIT_URL=$PROJECT_URL".git";
 
-    if git clone $GIT_URL $PROJECT_FOLDER >> "$LOG_FILE"; then
-        echo -e "[SUCCESS] Cloned the project successfully \n\n"
+    if git clone $GIT_URL $PROJECT_FOLDER >> "$LOG_FILE" 2>&1; then
+        echo -e "[SUCCESS] Cloned the project successfully "
     else
-        echo -e "[ERROR] Failed to clone the project \n\n"
+        echo -e "[ERROR] Failed to clone the project"
         return -1;
     fi
     
-    echo -e "[INFO] cd into project directory \n\n"
+    echo -e "[INFO] cd into project directory"
     cd $PROJECT_FOLDER
 
     find . -type f -name pom.xml 
@@ -54,12 +53,20 @@ function buildProject {
        return 0;
     fi
     
-    find . -type f -name build.gradle | sed -r 's|/[^/]+$||' |sort |uniq | while read file;
+    find . -mindepth 2 -type f -name build.gradle | sed -r 's|/[^/]+$||' |sort |uniq | while read file;
     do
       if [ -d "$file/src/test" ]; then
         echo -e "[SUCCESS] test folder exists under $file \n\n"
       else
-        echo -e "[INFO] NO UNIT TEST under $file \n\n"
+        echo -e "[INFO] NO UNIT TEST under $file "
+        echo -e "[INFO] Copuying the dummy tests in the $file"
+        cp -r $TEMPLATES_TEST $file/src/
+        if [ -d "$file/src/test" ]; then
+           echo -e "[SUCCESS] copied the dummy tests under $file"
+        else
+           echo -e "[ERROR] Unable to copy the template dummy test under $file"
+           return -1;
+        fi
       fi
     done;
     
@@ -92,7 +99,7 @@ function buildProject {
         return -1;
     fi
 
-    ./gradlew cleanTest testDebugUnitTestCoverage  >> "$LOG_FILE"
+    ./gradlew cleanTest testDebugUnitTestCoverage  >> $LOG_FILE 2>&1
   
     echo -e "[INFO] Gradle Build completed \n\n"
 
