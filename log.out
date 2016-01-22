@@ -1,0 +1,766 @@
+------------------------------- START https://github.com/FineUploader/server-examples ------------------------------- 
+
+
+2016-01-20:11:24:19 cloning the repository for server-examples from https://github.com/FineUploader/server-examples
+
+[SUCCESS] Cloned the project successfully 
+
+
+cd into project directory 
+
+
+[INFO] Its not an android project 
+
+
+[INFO] Copying the jacoco.gradle to the project root 
+
+
+Appending the apply jacoco.gradle to every build.gradle file 
+
+
+[INFO] Here is the git diff that script has introduced 
+
+
+[INFO] Initiating the build 
+
+
+[INFO] Gradle Build completed 
+
+
+-------------------------------- END https://github.com/FineUploader/server-examples --------------------------------- 
+------------------------------- START https://github.com/googlesamples/android-RuntimePermissions ------------------------------- 
+
+
+2016-01-20:11:24:19 cloning the repository for android-RuntimePermissions from https://github.com/googlesamples/android-RuntimePermissions
+
+[SUCCESS] Cloned the project successfully 
+
+
+cd into project directory 
+
+
+[INFO] NO UNIT TEST under . 
+
+
+[INFO] NO UNIT TEST under ./Application 
+
+
+[INFO] Its not an android project 
+
+
+[INFO] Copying the jacoco.gradle to the project root 
+
+
+Appending the apply jacoco.gradle to every build.gradle file 
+
+
+[INFO] Here is the git diff that script has introduced 
+
+
+diff --git a/Application/build.gradle b/Application/build.gradle
+index 0c6a89c..a85539e 100644
+--- a/Application/build.gradle
++++ b/Application/build.gradle
+@@ -59,3 +59,5 @@ android {
+     }
+ 
+ }
++
++apply from: '../jacoco.gradle'
+[INFO] Initiating the build 
+
+
+Downloading https://services.gradle.org/distributions/gradle-2.8-all.zip
+......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Unzipping /home/ubuntu/.gradle/wrapper/dists/gradle-2.8-all/5gvqtptsvj5jeqpfiir33enq91/gradle-2.8-all.zip to /home/ubuntu/.gradle/wrapper/dists/gradle-2.8-all/5gvqtptsvj5jeqpfiir33enq91
+Set executable permissions for: /home/ubuntu/.gradle/wrapper/dists/gradle-2.8-all/5gvqtptsvj5jeqpfiir33enq91/gradle-2.8/bin/gradle
+
+BUILD FAILED
+
+Total time: 25.623 secs
+[INFO] Gradle Build completed 
+
+
+-------------------------------- END https://github.com/googlesamples/android-RuntimePermissions --------------------------------- 
+------------------------------- START https://github.com/boxme/SquareCamera ------------------------------- 
+
+
+2016-01-20:11:24:45 cloning the repository for SquareCamera from https://github.com/boxme/SquareCamera
+
+[SUCCESS] Cloned the project successfully 
+
+
+cd into project directory 
+
+
+[INFO] NO UNIT TEST under . 
+
+
+[INFO] NO UNIT TEST under ./demo 
+
+
+[INFO] NO UNIT TEST under ./squarecamera 
+
+
+        classpath 'com.android.tools.build:gradle:1.3.0'
+        classpath 'com.github.dcendents:android-maven-plugin:1.2'
+[INFO] Its an android project 
+
+
+[INFO] Copying the jacoco.gradle to the project root 
+
+
+Appending the apply jacoco.gradle to every build.gradle file 
+
+
+[INFO] Here is the git diff that script has introduced 
+
+
+diff --git a/demo/build.gradle b/demo/build.gradle
+index 5353ac5..13245cf 100644
+--- a/demo/build.gradle
++++ b/demo/build.gradle
+@@ -25,3 +25,5 @@ dependencies {
+     //    compile 'com.github.boxme:squarecamera:1.0.3'
+     compile project(':squarecamera')
+ }
++
++apply from: '../jacoco.gradle'
+diff --git a/squarecamera/build.gradle b/squarecamera/build.gradle
+index fd17e49..ac9139b 100644
+--- a/squarecamera/build.gradle
++++ b/squarecamera/build.gradle
+@@ -115,3 +115,5 @@ artifacts {
+     archives javadocJar
+     archives sourcesJar
+ }
++
++apply from: '../jacoco.gradle'
+[INFO] Initiating the build 
+
+
+
+BUILD FAILED
+
+Total time: 12.884 secs
+[INFO] Gradle Build completed 
+
+
+-------------------------------- END https://github.com/boxme/SquareCamera --------------------------------- 
+------------------------------- START https://github.com/googlesamples/android-FingerprintDialog ------------------------------- 
+
+
+2016-01-20:11:24:59 cloning the repository for android-FingerprintDialog from https://github.com/googlesamples/android-FingerprintDialog
+
+[SUCCESS] Cloned the project successfully 
+
+
+cd into project directory 
+
+
+[INFO] NO UNIT TEST under . 
+
+
+[INFO] NO UNIT TEST under ./Application 
+
+
+[INFO] Its not an android project 
+
+
+[INFO] Copying the jacoco.gradle to the project root 
+
+
+Appending the apply jacoco.gradle to every build.gradle file 
+
+
+[INFO] Here is the git diff that script has introduced 
+
+
+diff --git a/Application/build.gradle b/Application/build.gradle
+index 1d4d651..c582207 100644
+--- a/Application/build.gradle
++++ b/Application/build.gradle
+@@ -60,3 +60,5 @@ android {
+     }
+ 
+ }
++
++apply from: '../jacoco.gradle'
+[INFO] Initiating the build 
+
+
+
+BUILD FAILED
+
+Total time: 12.383 secs
+[INFO] Gradle Build completed 
+
+
+-------------------------------- END https://github.com/googlesamples/android-FingerprintDialog --------------------------------- 
+------------------------------- START https://github.com/googledrive/android-quickstart ------------------------------- 
+
+
+2016-01-20:11:25:12 cloning the repository for android-quickstart from https://github.com/googledrive/android-quickstart
+
+[SUCCESS] Cloned the project successfully 
+
+
+cd into project directory 
+
+
+[INFO] NO UNIT TEST under . 
+
+
+[INFO] NO UNIT TEST under ./app 
+
+
+        classpath 'com.android.tools.build:gradle:1.3.0'
+[INFO] Its an android project 
+
+
+[INFO] Copying the jacoco.gradle to the project root 
+
+
+Appending the apply jacoco.gradle to every build.gradle file 
+
+
+[INFO] Here is the git diff that script has introduced 
+
+
+diff --git a/app/build.gradle b/app/build.gradle
+index 4fb7273..2397f63 100644
+--- a/app/build.gradle
++++ b/app/build.gradle
+@@ -27,3 +27,5 @@ dependencies {
+     // greater. Details of the client libs can be found at https://goo.gl/jKNdLm.
+     compile 'com.google.android.gms:play-services-drive:8.4.0'
+ }
++
++apply from: '../jacoco.gradle'
+[INFO] Initiating the build 
+
+
+:app:cleanTest UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72301Library
+:app:prepareComAndroidSupportSupportV42301Library
+:app:prepareComGoogleAndroidGmsPlayServicesBase840Library
+:app:prepareComGoogleAndroidGmsPlayServicesBasement840Library
+:app:prepareComGoogleAndroidGmsPlayServicesDrive840Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavac
+:app:preDebugUnitTestBuild UP-TO-DATE
+:app:prepareDebugUnitTestDependencies
+:app:processDebugUnitTestJavaRes UP-TO-DATE
+:app:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:app:compileDebugUnitTestSources UP-TO-DATE
+:app:mockableAndroidJar
+:app:assembleDebugUnitTest
+:app:testDebugUnitTest
+:app:testDebugUnitTestCoverage SKIPPED
+
+BUILD SUCCESSFUL
+
+Total time: 19.69 secs
+[INFO] Gradle Build completed 
+
+
+-------------------------------- END https://github.com/googledrive/android-quickstart --------------------------------- 
+------------------------------- START https://github.com/googlesamples/android-NavigationDrawer ------------------------------- 
+
+
+2016-01-20:11:25:33 cloning the repository for android-NavigationDrawer from https://github.com/googlesamples/android-NavigationDrawer
+
+[SUCCESS] Cloned the project successfully 
+
+
+cd into project directory 
+
+
+[INFO] NO UNIT TEST under . 
+
+
+[INFO] NO UNIT TEST under ./Application 
+
+
+[INFO] Its not an android project 
+
+
+[INFO] Copying the jacoco.gradle to the project root 
+
+
+Appending the apply jacoco.gradle to every build.gradle file 
+
+
+[INFO] Here is the git diff that script has introduced 
+
+
+diff --git a/Application/build.gradle b/Application/build.gradle
+index 69c3be3..02ba409 100644
+--- a/Application/build.gradle
++++ b/Application/build.gradle
+@@ -57,3 +57,5 @@ android {
+     }
+ 
+ }
++
++apply from: '../jacoco.gradle'
+[INFO] Initiating the build 
+
+
+
+BUILD FAILED
+
+Total time: 7.669 secs
+[INFO] Gradle Build completed 
+
+
+-------------------------------- END https://github.com/googlesamples/android-NavigationDrawer --------------------------------- 
+------------------------------- START https://github.com/googlesamples/android-BluetoothChat ------------------------------- 
+
+
+2016-01-20:11:25:41 cloning the repository for android-BluetoothChat from https://github.com/googlesamples/android-BluetoothChat
+
+[SUCCESS] Cloned the project successfully 
+
+
+cd into project directory 
+
+
+[INFO] NO UNIT TEST under . 
+
+
+[INFO] NO UNIT TEST under ./Application 
+
+
+[INFO] Its not an android project 
+
+
+[INFO] Copying the jacoco.gradle to the project root 
+
+
+Appending the apply jacoco.gradle to every build.gradle file 
+
+
+[INFO] Here is the git diff that script has introduced 
+
+
+diff --git a/Application/build.gradle b/Application/build.gradle
+index 013768e..5e503db 100644
+--- a/Application/build.gradle
++++ b/Application/build.gradle
+@@ -56,3 +56,5 @@ android {
+     }
+ 
+ }
++
++apply from: '../jacoco.gradle'
+[INFO] Initiating the build 
+
+
+
+BUILD FAILED
+
+Total time: 6.66 secs
+[INFO] Gradle Build completed 
+
+
+-------------------------------- END https://github.com/googlesamples/android-BluetoothChat --------------------------------- 
+------------------------------- START https://github.com/FineUploader/server-examples ------------------------------- 
+
+
+2016-01-20:11:39:22 cloning the repository for server-examples from https://github.com/FineUploader/server-examples
+
+[SUCCESS] Cloned the project successfully 
+
+
+[INFO] cd into project directory 
+
+
+[INFO] Its not an android project 
+
+
+[INFO] Copying the jacoco.gradle to the project root 
+
+
+[INFO] Appending the apply jacoco.gradle to every build.gradle file 
+
+
+[INFO] Here is the git diff that script has introduced 
+
+
+[INFO] Initiating the build 
+
+
+[INFO] Gradle Build completed 
+
+
+-------------------------------- END https://github.com/FineUploader/server-examples --------------------------------- 
+------------------------------- START https://github.com/googlesamples/android-RuntimePermissions ------------------------------- 
+
+
+2016-01-20:11:39:23 cloning the repository for android-RuntimePermissions from https://github.com/googlesamples/android-RuntimePermissions
+
+[SUCCESS] Cloned the project successfully 
+
+
+[INFO] cd into project directory 
+
+
+[INFO] NO UNIT TEST under . 
+
+
+[INFO] NO UNIT TEST under ./Application 
+
+
+[INFO] Its not an android project 
+
+
+[INFO] Copying the jacoco.gradle to the project root 
+
+
+[INFO] Appending the apply jacoco.gradle to every build.gradle file 
+
+
+[INFO] Here is the git diff that script has introduced 
+
+
+diff --git a/Application/build.gradle b/Application/build.gradle
+index 0c6a89c..a85539e 100644
+--- a/Application/build.gradle
++++ b/Application/build.gradle
+@@ -59,3 +59,5 @@ android {
+     }
+ 
+ }
++
++apply from: '../jacoco.gradle'
+[INFO] Initiating the build 
+
+
+
+BUILD FAILED
+
+Total time: 5.526 secs
+[INFO] Gradle Build completed 
+
+
+-------------------------------- END https://github.com/googlesamples/android-RuntimePermissions --------------------------------- 
+------------------------------- START https://github.com/boxme/SquareCamera ------------------------------- 
+
+
+2016-01-20:11:39:29 cloning the repository for SquareCamera from https://github.com/boxme/SquareCamera
+
+[SUCCESS] Cloned the project successfully 
+
+
+[INFO] cd into project directory 
+
+
+[INFO] NO UNIT TEST under . 
+
+
+[INFO] NO UNIT TEST under ./demo 
+
+
+[INFO] NO UNIT TEST under ./squarecamera 
+
+
+        classpath 'com.android.tools.build:gradle:1.3.0'
+        classpath 'com.github.dcendents:android-maven-plugin:1.2'
+[INFO] Its an android project 
+
+
+[INFO] Copying the jacoco.gradle to the project root 
+
+
+[INFO] Appending the apply jacoco.gradle to every build.gradle file 
+
+
+[INFO] Here is the git diff that script has introduced 
+
+
+diff --git a/demo/build.gradle b/demo/build.gradle
+index 5353ac5..13245cf 100644
+--- a/demo/build.gradle
++++ b/demo/build.gradle
+@@ -25,3 +25,5 @@ dependencies {
+     //    compile 'com.github.boxme:squarecamera:1.0.3'
+     compile project(':squarecamera')
+ }
++
++apply from: '../jacoco.gradle'
+diff --git a/squarecamera/build.gradle b/squarecamera/build.gradle
+index fd17e49..ac9139b 100644
+--- a/squarecamera/build.gradle
++++ b/squarecamera/build.gradle
+@@ -115,3 +115,5 @@ artifacts {
+     archives javadocJar
+     archives sourcesJar
+ }
++
++apply from: '../jacoco.gradle'
+[INFO] Initiating the build 
+
+
+
+BUILD FAILED
+
+Total time: 6.644 secs
+[INFO] Gradle Build completed 
+
+
+-------------------------------- END https://github.com/boxme/SquareCamera --------------------------------- 
+------------------------------- START https://github.com/googlesamples/android-FingerprintDialog ------------------------------- 
+
+
+2016-01-20:11:39:37 cloning the repository for android-FingerprintDialog from https://github.com/googlesamples/android-FingerprintDialog
+
+[SUCCESS] Cloned the project successfully 
+
+
+[INFO] cd into project directory 
+
+
+[INFO] NO UNIT TEST under . 
+
+
+[INFO] NO UNIT TEST under ./Application 
+
+
+[INFO] Its not an android project 
+
+
+[INFO] Copying the jacoco.gradle to the project root 
+
+
+[INFO] Appending the apply jacoco.gradle to every build.gradle file 
+
+
+[INFO] Here is the git diff that script has introduced 
+
+
+diff --git a/Application/build.gradle b/Application/build.gradle
+index 1d4d651..c582207 100644
+--- a/Application/build.gradle
++++ b/Application/build.gradle
+@@ -60,3 +60,5 @@ android {
+     }
+ 
+ }
++
++apply from: '../jacoco.gradle'
+[INFO] Initiating the build 
+
+
+
+BUILD FAILED
+
+Total time: 5.334 secs
+[INFO] Gradle Build completed 
+
+
+-------------------------------- END https://github.com/googlesamples/android-FingerprintDialog --------------------------------- 
+------------------------------- START https://github.com/googledrive/android-quickstart ------------------------------- 
+
+
+2016-01-20:11:39:43 cloning the repository for android-quickstart from https://github.com/googledrive/android-quickstart
+
+[SUCCESS] Cloned the project successfully 
+
+
+[INFO] cd into project directory 
+
+
+[INFO] NO UNIT TEST under . 
+
+
+[INFO] NO UNIT TEST under ./app 
+
+
+        classpath 'com.android.tools.build:gradle:1.3.0'
+[INFO] Its an android project 
+
+
+[INFO] Copying the jacoco.gradle to the project root 
+
+
+[INFO] Appending the apply jacoco.gradle to every build.gradle file 
+
+
+[INFO] Here is the git diff that script has introduced 
+
+
+diff --git a/app/build.gradle b/app/build.gradle
+index 4fb7273..2397f63 100644
+--- a/app/build.gradle
++++ b/app/build.gradle
+@@ -27,3 +27,5 @@ dependencies {
+     // greater. Details of the client libs can be found at https://goo.gl/jKNdLm.
+     compile 'com.google.android.gms:play-services-drive:8.4.0'
+ }
++
++apply from: '../jacoco.gradle'
+[INFO] Initiating the build 
+
+
+:app:cleanTest UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72301Library
+:app:prepareComAndroidSupportSupportV42301Library
+:app:prepareComGoogleAndroidGmsPlayServicesBase840Library
+:app:prepareComGoogleAndroidGmsPlayServicesBasement840Library
+:app:prepareComGoogleAndroidGmsPlayServicesDrive840Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavac
+:app:preDebugUnitTestBuild UP-TO-DATE
+:app:prepareDebugUnitTestDependencies
+:app:processDebugUnitTestJavaRes UP-TO-DATE
+:app:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:app:compileDebugUnitTestSources UP-TO-DATE
+:app:mockableAndroidJar
+:app:assembleDebugUnitTest
+:app:testDebugUnitTest
+:app:testDebugUnitTestCoverage SKIPPED
+
+BUILD SUCCESSFUL
+
+Total time: 14.47 secs
+[INFO] Gradle Build completed 
+
+
+-------------------------------- END https://github.com/googledrive/android-quickstart --------------------------------- 
+------------------------------- START https://github.com/googlesamples/android-NavigationDrawer ------------------------------- 
+
+
+2016-01-20:11:39:59 cloning the repository for android-NavigationDrawer from https://github.com/googlesamples/android-NavigationDrawer
+
+[SUCCESS] Cloned the project successfully 
+
+
+[INFO] cd into project directory 
+
+
+[INFO] NO UNIT TEST under . 
+
+
+[INFO] NO UNIT TEST under ./Application 
+
+
+[INFO] Its not an android project 
+
+
+[INFO] Copying the jacoco.gradle to the project root 
+
+
+[INFO] Appending the apply jacoco.gradle to every build.gradle file 
+
+
+[INFO] Here is the git diff that script has introduced 
+
+
+diff --git a/Application/build.gradle b/Application/build.gradle
+index 69c3be3..02ba409 100644
+--- a/Application/build.gradle
++++ b/Application/build.gradle
+@@ -57,3 +57,5 @@ android {
+     }
+ 
+ }
++
++apply from: '../jacoco.gradle'
+[INFO] Initiating the build 
+
+
+
+BUILD FAILED
+
+Total time: 5.474 secs
+[INFO] Gradle Build completed 
+
+
+-------------------------------- END https://github.com/googlesamples/android-NavigationDrawer --------------------------------- 
+------------------------------- START https://github.com/googlesamples/android-BluetoothChat ------------------------------- 
+
+
+2016-01-20:11:40:05 cloning the repository for android-BluetoothChat from https://github.com/googlesamples/android-BluetoothChat
+
+[SUCCESS] Cloned the project successfully 
+
+
+[INFO] cd into project directory 
+
+
+[INFO] NO UNIT TEST under . 
+
+
+[INFO] NO UNIT TEST under ./Application 
+
+
+[INFO] Its not an android project 
+
+
+[INFO] Copying the jacoco.gradle to the project root 
+
+
+[INFO] Appending the apply jacoco.gradle to every build.gradle file 
+
+
+[INFO] Here is the git diff that script has introduced 
+
+
+diff --git a/Application/build.gradle b/Application/build.gradle
+index 013768e..5e503db 100644
+--- a/Application/build.gradle
++++ b/Application/build.gradle
+@@ -56,3 +56,5 @@ android {
+     }
+ 
+ }
++
++apply from: '../jacoco.gradle'
+[INFO] Initiating the build 
+
+
+
+BUILD FAILED
+
+Total time: 6.594 secs
+[INFO] Gradle Build completed 
+
+
+-------------------------------- END https://github.com/googlesamples/android-BluetoothChat --------------------------------- 
+
+
+
+-------------------------------------- BUILD PROCESS COMPLETED --------------------------------------
